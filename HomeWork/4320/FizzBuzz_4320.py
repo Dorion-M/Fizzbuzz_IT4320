@@ -1,4 +1,10 @@
-def fizzbuzz_efficient():
+#Print numbers from 1 to 100
+#For multiples of 3, replace the number with 'Fizz'
+#For multiples of 5, replace the number with 'Buzz'
+#For multiples of both, replace the number with 'FizzBuzz'
+
+def fizzbuzz_clean():
+    
     for num in range(1, 101):
         fizz = (num % 3 == 0)
         buzz = (num % 5 == 0)
@@ -12,4 +18,4 @@ def fizzbuzz_efficient():
         else:
             print(num)
 
-fizzbuzz_efficient() 
+fizzbuzz_clean() 
