@@ -1,11 +1,15 @@
-numbers = [ i for i in range(1,101)]
+def fizzbuzz_efficient():
+    for num in range(1, 101):
+        fizz = (num % 3 == 0)
+        buzz = (num % 5 == 0)
+        
+        if fizz and buzz:
+            print("FizzBuzz")
+        elif fizz:
+            print("Fizz")
+        elif buzz:
+            print("Buzz")
+        else:
+            print(num)
 
-for number in numbers:
-    if number % 3 == 0 and number % 5 == 0:
-        print(number,'- FizzBuzz')
-    elif number % 3 == 0:
-        print(number,'- Fizz')
-    elif number % 5 == 0:
-        print(number,'- Buzz')
-    else:
-        print(str(number))
+fizzbuzz_efficient() 
